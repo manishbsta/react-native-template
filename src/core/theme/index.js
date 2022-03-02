@@ -33,7 +33,7 @@ export const paperTheme = {
   ...PaperTheme,
 
   fonts: configureFonts(fontConfig),
-  roundness: 10,
+  roundness: 4,
   colors: {
     ...PaperTheme.colors,
     ...colors,

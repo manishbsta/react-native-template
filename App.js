@@ -4,16 +4,15 @@ import {Provider as PaperProvider} from 'react-native-paper';
 import {NavigationContainer} from '@react-navigation/native';
 
 import store from './src/store';
-import {paperTheme, navTheme} from './src/core/theme';
+import {paperTheme, navTheme} from './src/app/theme';
 
 import AppNavigation from './src/navigation';
-import {navigationRef} from './src/utils/app_navigation';
 
 const App = () => {
   return (
     <StoreProvider store={store}>
       <PaperProvider theme={paperTheme}>
-        <NavigationContainer theme={navTheme} ref={navigationRef}>
+        <NavigationContainer theme={navTheme}>
           <AppNavigation />
         </NavigationContainer>
       </PaperProvider>

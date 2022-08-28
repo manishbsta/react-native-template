@@ -8,13 +8,13 @@ import {
   KeyboardAvoidingView,
 } from 'react-native';
 
-import {SPACINGS} from '../../core/theme';
-import {IMAGES} from '../../core/constants/images';
-import {ROUTES} from '../../core/constants/routes';
+import {SPACINGS} from '../../app/theme';
+import {IMAGES} from '../../../assets/images/images';
+import {ROUTES} from '../../app/constants/routes';
 
-import PrimaryButton from '../../components/common/PrimaryButton';
-import VerticalSpacer from '../../components/common/VerticalSpacer';
-import LabelledCheckbox from '../../components/common/LabelledCheckbox';
+import FormButton from '../../app/components/FormButton';
+import VerticalSpacer from '../../app/components/VerticalSpacer';
+import LabelledCheckbox from '../../app/components/LabelledCheckbox';
 
 const LoginScreen = ({navigation}) => {
   const emailRef = useRef();
@@ -77,7 +77,7 @@ const LoginScreen = ({navigation}) => {
           label={'Remember me'}
         />
         <VerticalSpacer size={20} />
-        <PrimaryButton label="Log in" onPress={onLoginPressed} />
+        <FormButton label="Log in" onPress={onLoginPressed} />
       </KeyboardAvoidingView>
     </ScrollView>
   );

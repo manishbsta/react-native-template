@@ -2,10 +2,10 @@ import React from 'react';
 import {ScrollView, StyleSheet} from 'react-native';
 import {Button, Title} from 'react-native-paper';
 
-import VerticalSpacer from '../../../components/common/VerticalSpacer';
+import VerticalSpacer from '../../../app/components/VerticalSpacer';
 
-import {SPACINGS} from '../../../core/theme';
-import {ROUTES} from '../../../core/constants/routes';
+import {SPACINGS} from '../../../app/theme';
+import {ROUTES} from '../../../app/constants/routes';
 
 const SearchScreen = ({navigation}) => {
   return (

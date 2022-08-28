@@ -2,9 +2,9 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 import {Button} from 'react-native-paper';
 
-import {SPACINGS} from '../../core/theme';
+import {SPACINGS} from '../../app/theme';
 
-const PrimaryButton = ({label, isLoading, icon, onPress, ...rest}) => {
+const FormButton = ({label, isLoading, icon, onPress, ...rest}) => {
   return (
     <Button
       icon={icon}
@@ -18,7 +18,7 @@ const PrimaryButton = ({label, isLoading, icon, onPress, ...rest}) => {
   );
 };
 
-export default PrimaryButton;
+export default FormButton;
 
 const styles = StyleSheet.create({
   content: {

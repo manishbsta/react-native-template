@@ -1,7 +1,7 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {ROUTES} from '../core/constants/routes';
+import {ROUTES} from '../app/constants/routes';
 
 import AuthStack from './auth_stack';
 import RootStack from './root_stack';

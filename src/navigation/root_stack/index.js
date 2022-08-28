@@ -5,7 +5,7 @@ import HomeStack from './HomeStack';
 import SearchStack from './SearchStack';
 import SettingsStack from './SettingsStack';
 
-import {ROUTES} from '../../core/constants/routes';
+import {ROUTES} from '../../app/constants/routes';
 
 const {Screen, Navigator} = createNativeStackNavigator();
 const BottomTabStack = () => {

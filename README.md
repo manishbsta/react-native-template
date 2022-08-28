@@ -1,5 +1,5 @@
 # react-native-template
-A React Native starter template project with built-in native stack navigation &amp; redux toolkit.
+A React Native starter template project with built-in navigation &amp; redux toolkit.
 
 ## What's included?
 * axios

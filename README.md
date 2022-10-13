@@ -15,5 +15,3 @@ A React Native starter template project with built-in navigation &amp; redux too
 * Pre-setup navigation and redux toolkit.
 * Actively updated maintained.
 
-## Additional Configs
-* Portrait mode locked in Android

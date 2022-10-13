@@ -13,5 +13,5 @@ A React Native starter template project with built-in navigation &amp; redux too
 * Authentication flow.
 * Comes with custom theme and fonts.
 * Pre-setup navigation and redux toolkit.
-* Actively updated maintained.
+* Actively maintained.
 

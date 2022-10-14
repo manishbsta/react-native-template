@@ -7,7 +7,7 @@ import LoginScreen from '../../screens/auth_stack/LoginScreen';
 
 const {Screen, Navigator} = createNativeStackNavigator();
 
-const RootStack = () => {
+const AuthStack = () => {
   return (
     <Navigator screenOptions={{headerShown: false}}>
       <Screen name={ROUTES.login} component={LoginScreen} />
@@ -15,4 +15,4 @@ const RootStack = () => {
   );
 };
 
-export default RootStack;
+export default AuthStack;

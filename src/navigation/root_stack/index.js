@@ -8,7 +8,7 @@ import SettingsStack from './SettingsStack';
 import {ROUTES} from '../../app/constants/routes';
 
 const {Screen, Navigator} = createNativeStackNavigator();
-const BottomTabStack = () => {
+const RootStack = () => {
   return (
     <Navigator
       screenOptions={{
@@ -21,4 +21,4 @@ const BottomTabStack = () => {
   );
 };
 
-export default BottomTabStack;
+export default RootStack;

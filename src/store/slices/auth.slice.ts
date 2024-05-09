@@ -1,7 +1,7 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {mmkv} from '../../utils/mmkv';
-import {AuthState} from './types';
-import {KEYS} from '../../core/constants/storage-keys';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { mmkv } from '../../utils/mmkv';
+import { AuthState } from './types';
+import { KEYS } from '../../core/constants/storage-keys';
 
 const initialState: AuthState = {
   token: undefined,
@@ -23,6 +23,6 @@ const authSlice = createSlice({
   },
 });
 
-export const {setToken, logOut} = authSlice.actions;
+export const { setToken, logOut } = authSlice.actions;
 
 export const authReducer = authSlice.reducer;

@@ -1,6 +1,6 @@
-import {MMKV} from 'react-native-mmkv';
+import { MMKV } from 'react-native-mmkv';
 
 export const mmkv = new MMKV({
-  id: `wdf-attendance-storage`,
+  id: 'wdf-template-storag',
   encryptionKey: 'M0ZBLbos3TqxRT3mBO9JhqrLLXpWWN',
 });

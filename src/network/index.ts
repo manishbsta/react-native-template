@@ -1,22 +1,24 @@
-import axios, {AxiosError} from 'axios';
+import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 
-import {KEYS} from '../core/constants/storage-keys';
-import {URLS} from '../core/constants/urls';
-import {mmkv} from '../utils/mmkv';
+import { KEYS } from '../core/constants/storage-keys';
+import { BASE_URL } from '../core/constants/urls';
+import { mmkv } from '../utils/mmkv';
 
 const client = axios.create({
-  baseURL: URLS.baseUrl,
+  baseURL: BASE_URL,
   headers: {
     Accept: 'application/json',
   },
 });
 
 client.interceptors.request.use(
-  async config => {
+  async (config: InternalAxiosRequestConfig<any>) => {
     config.headers['x-auth'] = mmkv.getString(KEYS.accessToken);
     return config;
   },
-  error => Promise.reject(error),
+  (error: unknown) => {
+    Promise.reject(error);
+  },
 );
 
 // utility function to check if the error is AxiosError

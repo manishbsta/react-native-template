@@ -16,3 +16,4 @@ A React Native starter template project with built-in navigation &amp; redux too
 - Comes with custom theme and fonts.
 - Pre-setup navigation and redux toolkit.
 - Actively maintained.
+- Eslint & Prettier preconfigured to work together.

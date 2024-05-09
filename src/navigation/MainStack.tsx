@@ -1,19 +1,26 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
 
-import {MainStackParams} from './_types';
-import HomeScreen from '../screens/HomeScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import Home from '../screens/Home';
+import Settings from '../screens/Settings';
+import { MainStackParams } from './types';
 
-const {Screen, Navigator} = createNativeStackNavigator<MainStackParams>();
+const { Screen, Navigator } = createNativeStackNavigator<MainStackParams>();
+
 const MainStack = () => {
   return (
     <Navigator
       screenOptions={{
-        headerShown: false,
         animation: 'fade_from_bottom',
       }}>
-      <Screen name="Home" component={HomeScreen} />
-      <Screen name="Settings" component={SettingsScreen} />
+      <Screen
+        name='Home'
+        component={Home}
+      />
+      <Screen
+        name='Settings'
+        component={Settings}
+      />
     </Navigator>
   );
 };

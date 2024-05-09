@@ -13,7 +13,6 @@ A React Native starter template project with built-in navigation &amp; redux too
 ## Why should I use this template?
 
 - Splash Screen & Authentication flow.
-- Comes with custom theme and fonts.
 - Pre-setup navigation and redux toolkit.
-- Actively maintained.
 - Eslint & Prettier preconfigured to work together.
+- Actively maintained.
